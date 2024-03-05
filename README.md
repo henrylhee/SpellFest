@@ -4,25 +4,28 @@
 # SpellFest
 Third semester project
 
-### 2D, tile-based action game in pixel art style. Use a slingshot to cast spells 
+### 2D, tile-based action-adventure game in pixel art style.
 
-In Unholy Tactics you advance by cleverly summoning the right units, choose your attacks wisely and manage resources.
+Master the art of spellcasting to navigate through each challenge with finesse, ensuring victory in every encounter.  
+Stay alert to the dynamic environment, strategically wielding your magic to overcome any obstacle in your path.
 
 ## Features
- - 16 levels
- - 5 units to summon
- - 5 diffrent enemies
- - units use a pool of 16 different spells
+ - 2 main spells with incremental strength and upgrades
+ - Advanced slingshot mechanic to cast the spells
+ - 5 different enemies + endboss
+ - 4 different elemental tiles with unique effects on all units
+ - Dynamic tile creation and transformation
+
+## Responsibilities
+ - Gameplay programming
+ - Tilemap system
+ - VFX
 
 ## Engine/Tools
  - Unity/C#
  - Visual Studio
  - Perforce
-
-## Roles
- - Gameplay programming
- - Shader programming (Shadergraph)
- - VFX
+ - Trello
 
 ##
-Homepage: [https://s4g.itch.io/unholy-tactics](https://s4g.itch.io/unholy-tactics)
+Itch: [https://s4g.itch.io/spellfest](https://s4g.itch.io/spellfest)
