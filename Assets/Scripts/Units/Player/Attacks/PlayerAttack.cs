@@ -13,8 +13,8 @@ public class PlayerAttack : MonoBehaviour
     public List<float> ImpactDamage { get {  return impactDamage; } }
 
     [SerializeField]
-    AttackType type;
-    public AttackType Type { get { return type; } }
+    AttackType attackType;
+    public AttackType AttackType { get { return attackType; } }
 
     [SerializeField]
     List<float> enemyKnockBackStrength;

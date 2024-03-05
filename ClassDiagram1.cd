@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Unit">
+    <Position X="5" Y="1.25" Width="2" />
+    <Members>
+      <Field Name="col" Hidden="true" />
+      <Field Name="currentCellPosition" Hidden="true" />
+      <Field Name="currentTileElement" Hidden="true" />
+      <Property Name="ignoredElementTypes" Hidden="true" />
+      <Field Name="rb" Hidden="true" />
+      <Property Name="spellEffects" Hidden="true" />
+      <Property Name="tileEffects" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAxAIAIIACAAAQCkAAAAAQAAAABABAAAAAgABwBCAUg=</HashCode>
+      <FileName>Assets\Scripts\Units\Unit.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="unitMovement" />
+      <Property Name="health" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Enemy" Collapsed="true">
+    <Position X="10" Y="3" Width="1.75" />
+    <Members>
+      <Field Name="animator" Hidden="true" />
+      <Field Name="attackRange" Hidden="true" />
+      <Field Name="attackRecoverTime" Hidden="true" />
+      <Field Name="audioSource" Hidden="true" />
+      <Method Name="Awake" Hidden="true" />
+      <Method Name="CancelStun" Hidden="true" />
+      <Method Name="ChangeColorOnReceiveDamage" Hidden="true" />
+      <Method Name="DestroyEnemy" Hidden="true" />
+      <Method Name="Die" Hidden="true" />
+      <Method Name="EndStun" Hidden="true" />
+      <Field Name="enemyDropSystem" Hidden="true" />
+      <Field Name="enemyHealthbar" Hidden="true" />
+      <Field Name="enemyVFX" Hidden="true" />
+      <Method Name="FinishSpawning" Hidden="true" />
+      <Field Name="floatingTxtObject" Hidden="true" />
+      <Field Name="graphic" Hidden="true" />
+      <Method Name="Initialize" Hidden="true" />
+      <Property Name="isDieing" Hidden="true" />
+      <Field Name="isRecovering" Hidden="true" />
+      <Property Name="isStunned" Hidden="true" />
+      <Property Name="isUnstunable" Hidden="true" />
+      <Method Name="KnockBack" Hidden="true" />
+      <Field Name="knockBackRecoverTime" Hidden="true" />
+      <Field Name="maxRandomPitchRange" Hidden="true" />
+      <Field Name="minRandomPitchRange" Hidden="true" />
+      <Property Name="OnDie" Hidden="true" />
+      <Method Name="OnKnockBackEnd" Hidden="true" />
+      <Property Name="OnSpawnFinished" Hidden="true" />
+      <Method Name="RandomPitch" Hidden="true" />
+      <Method Name="ReceiveAttack" Hidden="true" />
+      <Method Name="ShowDamage" Hidden="true" />
+      <Field Name="sightRange" Hidden="true" />
+      <Field Name="spawnTime" Hidden="true" />
+      <Field Name="spawnUntilCheckpoint" Hidden="true" />
+      <Field Name="spriteRenderer" Hidden="true" />
+      <Method Name="StartDieAnimation" Hidden="true" />
+      <Method Name="StartSpawning" Hidden="true" />
+      <Method Name="StartStun" Hidden="true" />
+      <Method Name="StunImmunTimer" Hidden="true" />
+      <Field Name="target" Hidden="true" />
+      <Field Name="typeToIgnore" Hidden="true" />
+      <Property Name="TypeToIgnore" Hidden="true" />
+      <Method Name="UpdateActionState" Hidden="true" />
+      <Field Name="usePitch" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BEtAACSIEAgMBSQgJCAAkAQAkAAI1EAgAYEABAgEAEE=</HashCode>
+      <FileName>Assets\Scripts\Units\Enemies\Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.75" />
+    <Members>
+      <Property Name="activeSpell" Hidden="true" />
+      <Field Name="audioSource" Hidden="true" />
+      <Method Name="Awake" Hidden="true" />
+      <Method Name="BaseAttack" Hidden="true" />
+      <Field Name="baseAttackCooldown" Hidden="true" />
+      <Field Name="baseProjectile" Hidden="true" />
+      <Method Name="ChangeSpell" Hidden="true" />
+      <Method Name="Die" Hidden="true" />
+      <Method Name="EndDialogue" Hidden="true" />
+      <Field Name="fireProjectile" Hidden="true" />
+      <Property Name="graphic" Hidden="true" />
+      <Method Name="Heal" Hidden="true" />
+      <Field Name="hitbox" Hidden="true" />
+      <Field Name="iceProjectile" Hidden="true" />
+      <Method Name="Initialize" Hidden="true" />
+      <Method Name="Interact" Hidden="true" />
+      <Field Name="invincibleTime" Hidden="true" />
+      <Method Name="InvincibleTimer" Hidden="true" />
+      <Field Name="isInCheckpointRange" Hidden="true" />
+      <Field Name="isInDialogue" Hidden="true" />
+      <Field Name="isInvincible" Hidden="true" />
+      <Field Name="isPulling" Hidden="true" />
+      <Method Name="LeftClick" Hidden="true" />
+      <Method Name="LeftClickReleased" Hidden="true" />
+      <Field Name="movement" Hidden="true" />
+      <Property Name="OnAdvanceDialogue" Hidden="true" />
+      <Method Name="OnChangeSpellCharge" Hidden="true" />
+      <Property Name="OnPetCat" Hidden="true" />
+      <Field Name="playerVFX" Hidden="true" />
+      <Field Name="projectileSpawnPosition" Hidden="true" />
+      <Field Name="pullPath" Hidden="true" />
+      <Method Name="ReceiveAttack" Hidden="true" />
+      <Method Name="RightClick" Hidden="true" />
+      <Method Name="SetInvincible" Hidden="true" />
+      <Field Name="slowOnCastSpell" Hidden="true" />
+      <Method Name="SpellAttack" Hidden="true" />
+      <Method Name="StartSliding" Hidden="true" />
+      <Method Name="StopSliding" Hidden="true" />
+      <Method Name="UpdateMoveInput" Hidden="true" />
+      <Method Name="UpdateSpellUI" Hidden="true" />
+      <Method Name="UpgradeFireSpell" Hidden="true" />
+      <Method Name="UpgradeIceSpell" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABgEGAQIFAA0ARCiIIAgAAAAIgBIEIQBIAAsAAICCEQ=</HashCode>
+      <FileName>Assets\Scripts\Units\Player\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitMovement" Collapsed="true">
+    <Position X="1.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADQAAAAIAqAAAQAFAABAIACAAAhBiRABAIAAAAAABEA=</HashCode>
+      <FileName>Assets\Scripts\Units\Movement\UnitMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitHealth" Collapsed="true">
+    <Position X="1.75" Y="2.25" Width="1.5" />
+    <Members>
+      <Method Name="AmplifyDamage" Hidden="true" />
+      <Method Name="AmplifyDamageTimer" Hidden="true" />
+      <Method Name="ApplyDps" Hidden="true" />
+      <Method Name="ApplyIntervalDamage" Hidden="true" />
+      <Field Name="currentHP" Hidden="true" />
+      <Field Name="damageAmplifier" Hidden="true" />
+      <Field Name="dps" Hidden="true" />
+      <Method Name="Heal" Hidden="true" />
+      <Field Name="hpChange" Hidden="true" />
+      <Field Name="hps" Hidden="true" />
+      <Method Name="InitializeUI" Hidden="true" />
+      <Field Name="intervalDamage" Hidden="true" />
+      <Field Name="isInvincible" Hidden="true" />
+      <Method Name="LateUpdate" Hidden="true" />
+      <Field Name="maxHP" Hidden="true" />
+      <Method Name="ModifyDamageTaken" Hidden="true" />
+      <Property Name="OnDie" Hidden="true" />
+      <Property Name="OnTakeDamage" Hidden="true" />
+      <Method Name="RemoveDps" Hidden="true" />
+      <Method Name="RemoveIntervalDamage" Hidden="true" />
+      <Method Name="ResetDamageTaken" Hidden="true" />
+      <Method Name="ResetHealth" Hidden="true" />
+      <Method Name="SetInvincible" Hidden="true" />
+      <Method Name="SetVincible" Hidden="true" />
+      <Method Name="Start" Hidden="true" />
+      <Method Name="TakeDamage" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+      <Method Name="UpdateConstantDamage" Hidden="true" />
+      <Method Name="UpdateUI" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>gAYUAIAAACAQARCCAgAAIACAABJAAAAAAETAgABgECA=</HashCode>
+      <FileName>Assets\Scripts\Units\UnitHealth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archer" Collapsed="true">
+    <Position X="12" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AA2gAQhIAARAFQAgAKAABDAAACDAAAEEASAAAAQAAEE=</HashCode>
+      <FileName>Assets\Scripts\Units\Enemies\Archer\Archer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Slime" Collapsed="true">
+    <Position X="10" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iE2AAAAIAAAAhSAhAAQAABABICBAgAAEAVAgACAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Units\Enemies\Slime\Slime.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wendigo" Collapsed="true">
+    <Position X="8" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>miyoAQwQDQhEFQU6QIAMBAhAICQhBAEED3pkASoCANE=</HashCode>
+      <FileName>Assets\Scripts\Units\Enemies\Wendigo\Wendigo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyMovement" Collapsed="true">
+    <Position X="0.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQgEAAIAoAQAQAAAAAAAAAAAABAAAAIAAAAAAAECEA=</HashCode>
+      <FileName>Assets\Scripts\Units\Enemies\EnemyMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyHealth" Collapsed="true">
+    <Position X="0.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Units\Enemies\EnemyHealth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerHealth" Collapsed="true">
+    <Position X="2.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Units\Player\PlayerHealth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerMovement" Collapsed="true">
+    <Position X="2.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAIAAAREAAAAQAAAAAAAABBAAAYAAQAAAACQ=</HashCode>
+      <FileName>Assets\Scripts\Units\Player\PlayerMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Effect">
+    <Position X="19" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABACAABQAAAAAAAAABACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Elements\Effects\Effect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConstantDamage" Collapsed="true">
+    <Position X="16.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAACBAAAAAAAQAgBAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Elements\Effects\ConstantDamage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ModifySpeed" Collapsed="true">
+    <Position X="19" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAABAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Elements\Effects\ModifySpeed.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Slide" Collapsed="true">
+    <Position X="21.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Elements\Effects\Slide.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ElementalSlime" Collapsed="true">
+    <Position X="9" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Units\Enemies\ElementalSlime\ElementalSlime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SillyMan" Collapsed="true">
+    <Position X="11.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Units\Enemies\SillyMan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerAttack">
+    <Position X="27.5" Y="1.25" Width="1.5" />
+    <Members>
+      <Field Name="attackType" Hidden="true" />
+      <Field Name="enemyKnockBackStrength" Hidden="true" />
+      <Field Name="impactDamage" Hidden="true" />
+      <Field Name="shakeStrength" Hidden="true" />
+      <Field Name="speed" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAEAACIAAAAAAAAEBAAABAYAAAAAAAAAIAAA=</HashCode>
+      <FileName>Assets\Scripts\Units\Player\Attacks\PlayerAttack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseAttack" Collapsed="true">
+    <Position X="32.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Units\Player\Attacks\BaseAttack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ElementAttack">
+    <Position X="29.75" Y="0.5" Width="1.75" />
+    <Members>
+      <Field Name="aoeRadius" Hidden="true" />
+      <Field Name="effects" Hidden="true" />
+      <Field Name="elementType" Hidden="true" />
+      <Field Name="maxDistance" Hidden="true" />
+      <Field Name="tileSpawnChance" Hidden="true" />
+      <Field Name="tileSpawnDelay" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAABQAAAAQACAAAAAwAAAAEAAAAEAAAABAAAgAAAAM=</HashCode>
+      <FileName>Assets\Scripts\Units\Player\Attacks\ElementAttack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireAttack" Collapsed="true">
+    <Position X="32.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Units\Player\Attacks\FireAttack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IceAttack" Collapsed="true">
+    <Position X="32.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAABAAAAAAAAAAAKAAAAAAAAAAAAAAEAAAAAAQAA=</HashCode>
+      <FileName>Assets\Scripts\Units\Player\Attacks\IceAttack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projectile">
+    <Position X="37.25" Y="0.5" Width="1.75" />
+    <Members>
+      <Field Name="collision" Hidden="true" />
+      <Field Name="direction" Hidden="true" />
+      <Field Name="isTravelling" Hidden="true" />
+      <Field Name="moveVector" Hidden="true" />
+      <Field Name="rb" Hidden="true" />
+      <Field Name="source" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAkQAAAgAgJAJEAAAAAAAAAAAAAACAAAIgAgAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Projectiles\Projectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArcherProjectile" Collapsed="true">
+    <Position X="35.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAIAAQBAAAAAAAAAAIAAAACAAAAAAgAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Projectiles\ArcherProjectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseProjectile" Collapsed="true">
+    <Position X="35.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAIAAQBAAAAAAAAAAAAACAGAAAAAAgAQAAA=</HashCode>
+      <FileName>Assets\Scripts\Projectiles\BaseProjectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ElementProjectile" Collapsed="true">
+    <Position X="35.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICCBQAAAAAEAQDAAACiAAAAAEAgCIKAAAAAggAAAIQ=</HashCode>
+      <FileName>Assets\Scripts\Projectiles\ElementProjectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WendigoProjectile" Collapsed="true">
+    <Position X="35.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICAJQAACgCAAQJAAAAGAAAAEEAgCACAAgBgCgABAAQ=</HashCode>
+      <FileName>Assets\Scripts\Projectiles\WendigoProjectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -21,7 +21,6 @@ public abstract class Enemy : Unit
     GameObject floatingTxtObject;
 
     protected EnemyDropSystem enemyDropSystem;
-    EnemyMovement enemyMovement;
     SpriteRenderer spriteRenderer;
     EnemyGraphic graphic;
     EnemyVFX enemyVFX;

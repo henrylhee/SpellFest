@@ -7,8 +7,8 @@ using UnityEngine;
 public abstract class Effect : MonoBehaviour
 {
     [SerializeField]
-    ElementType type;
-    public ElementType Type => type;
+    ElementType elementType;
+    public ElementType ElementType => elementType;
     [SerializeField]
     EffectType effectType;
     public EffectType EffectType => effectType;

@@ -45,7 +45,6 @@ public class ConstantDamage : Effect
 
     private void AddValues(Unit unit)
     {
-        //unit.GetComponentInChildren<SpriteRenderer>().material.SetInt("_IsBurning", 1);
         if (unit.GetComponentInChildren<PlayerVFX>())
         {
             unit.GetComponentInChildren<PlayerVFX>().StartBurn();
