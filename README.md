@@ -1,13 +1,16 @@
 ![alt text](/Assets/ReadMe_Pictures/SpellFest_Banner.PNG?raw=true)
-
-
 # SpellFest
-Third semester project
+
+- Third semester project
+- Teamsize: 5
+- 10 weeks from the first idea until finished game
+- Unity
 
 ### 2D, tile-based action-adventure game in pixel art style.
 
-Master the art of spellcasting to navigate through each challenge with finesse, ensuring victory in every encounter.  
-Stay alert to the dynamic environment, strategically wielding your magic to overcome any obstacle in your path.
+Master the art of spellcasting to navigate through each challenge with finesse,  
+ensuring victory in every encounter. Stay alert to the dynamic environment,  
+strategically wielding your magic to overcome any obstacle in your path.
 
 ## Features
  - 2 main spells with incremental strength and upgrades
